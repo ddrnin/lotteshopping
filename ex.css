@@ -1,0 +1,112 @@
+main {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh !important;
+  overflow: hidden;
+}
+.wrapper .scroll-title {
+  font-size: 21px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: block;
+  z-index: 20;
+  list-style: none;
+  width: auto;
+  padding: 0;
+  color: white;
+  font-weight: 100;
+}
+.wrapper .cta {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: block;
+  z-index: 20;
+  list-style: none;
+  width: auto;
+  padding: 0;
+  color: white;
+}
+.wrapper ul.stories {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  z-index: 20;
+  list-style: none;
+  width: auto;
+  padding: 0;
+}
+.wrapper ul.stories li {
+  display: inline;
+}
+.wrapper ul.stories li a {
+  color: white;
+}
+.wrapper .progress-bar-container {
+  max-width: 300px;
+  height: 10px;
+  border: #f1f0f0;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 100px;
+  z-index: 20;
+  display: table;
+  overflow: hidden;
+  width: 100%;
+  background: #222;
+  margin: 0 auto;
+  left: 50%;
+  right: 0;
+  transform: translate(-50%, 0);
+}
+.wrapper .progress-bar-container .progress-bar {
+  width: 0%;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: red;
+  transition: all 0.3s ease;
+}
+.wrapper .sections {
+  width: 400%;
+  height: 100%;
+}
+.wrapper .sections .section {
+  height: 100%;
+  width: 25%;
+  float: left;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.wrapper .sections .section:nth-child(1) {
+  background: black;
+}
+.wrapper .sections .section:nth-child(2) {
+  background: maroon;
+}
+.wrapper .sections .section:nth-child(3) {
+  background: blue;
+}
+.wrapper .sections .section:nth-child(4) {
+  background: green;
+}
+.wrapper .sections .section .sectionTitle {
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  z-index: 5;
+}
+
+/*# sourceMappingURL=ex.css.map */

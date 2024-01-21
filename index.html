@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>롯데백화점</title>
+		<link rel="stylesheet" href="lib/setup.css" />
+		<link rel="stylesheet" href="style/main.css" />
+		<link rel="stylesheet" href="lib/font.css" />
+		<script src="./lib/jquery.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://db.onlinewebfonts.com/c/02a5628b91717ae7191a2b202a5e93a4?family=Orelo+SemiWide+Regular"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://db.onlinewebfonts.com/c/df5cb1d3b4d7c8d50550644438d5ec37?family=Orelo+SemiWide+Medium+Italic"
+			rel="stylesheet"
+		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+		<script>
+			// main1 애니메이션간 스크롤 막기
+			$(window).on('load', function () {
+				setTimeout(function () {
+					// document.body.classList.remove('no_scroll');
+					$('.body_wrap').removeClass('no_scroll');
+					$('.title_outer').removeClass('no_scroll');
+					$('.frame').removeClass('no_scroll');
+				}, 4800);
+			});
+			// 새로고침시 맨위로
+			window.onbeforeunload = function () {
+				window.scrollTo(0, 0);
+			};
+		</script>
+	</head>
+
+	<body>
+		<div class="body_wrap no_scroll">
+			<header>
+				<div class="hd1">
+					<div class="hd1_wrap">
+						<ul>
+							<li>
+								<a href="#"><img src="img/hd1_1.png" alt="" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/hd1_2.png" alt="" /></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/hd1_3.png" alt="" /></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="hd2">
+					<div class="hd2_wrap">
+						<div class="logo"><img src="img/logo.svg" alt="" /></div>
+						<ul class="menu">
+							<li class="menu1"><a href="#">지점안내</a></li>
+							<li class="menu1"><a href="#">쇼핑정보</a></li>
+							<li class="menu2"><a href="#">컬쳐앤라이프</a></li>
+							<li><a href="#">매거진</a></li>
+							<li class="menu3"><a href="#">고객서비스</a></li>
+							<li><a href="#">ESG</a></li>
+						</ul>
+						<div class="search">
+							<div class="place">
+								<div class="place_inner">
+									<div class="place_inner_moving">
+										<span>한 눈에 보는 지점 정보</span>
+										<span>한 눈에 보는 지점 정보</span>
+										<span>한 눈에 보는 지점 정보</span>
+										<span>한 눈에 보는 지점 정보</span>
+									</div>
+								</div>
+							</div>
+							<button class="searchBtn"></button>
+						</div>
+					</div>
+				</div>
+				<div class="popup">
+					<div class="popup_wrap">
+						<div class="list">
+							<div>백화점</div>
+							<div>아울렛</div>
+							<div>쇼핑몰</div>
+						</div>
+						<div class="list_type">
+							<p>서울점</p>
+							<ul>
+								<li><a href="#">잠실점</a></li>
+								<li><a href="#">본점</a></li>
+								<li><a href="#">강남점</a></li>
+								<li><a href="#">건대스타시티점</a></li>
+								<li><a href="#">관악점</a></li>
+								<li><a href="#">김포공항점</a></li>
+								<li><a href="#">노원점</a></li>
+								<li><a href="#">미아점</a></li>
+								<li><a href="#">영등포점</a></li>
+								<li><a href="#">청량리점</a></li>
+							</ul>
+							<p>수도권점</p>
+							<ul>
+								<li><a href="#">잠실점</a></li>
+								<li><a href="#">본점</a></li>
+								<li><a href="#">강남점</a></li>
+								<li><a href="#">건대스타시티점</a></li>
+								<li><a href="#">관악점</a></li>
+								<li><a href="#">김포공항점</a></li>
+								<li><a href="#">노원점</a></li>
+								<li><a href="#">미아점</a></li>
+								<li><a href="#">영등포점</a></li>
+							</ul>
+							<p>지방점</p>
+
+							<ul>
+								<li><a href="#">잠실점</a></li>
+								<li><a href="#">본점</a></li>
+								<li><a href="#">강남점</a></li>
+								<li><a href="#">건대스타시티점</a></li>
+								<li><a href="#">관악점</a></li>
+								<li><a href="#">김포공항점</a></li>
+								<li><a href="#">노원점</a></li>
+								<li><a href="#">미아점</a></li>
+								<li><a href="#">영등포점</a></li>
+								<li><a href="#">청량리점</a></li>
+								<li><a href="#">전주점</a></li>
+								<li><a href="#">창원점</a></li>
+								<li><a href="#">포항점</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<ul class="sub_menu store">
+					<li class="store_list">
+						<div>
+							<div class="dep"><span> 백화점</span></div>
+							<div class="out"><span> 아울렛</span></div>
+							<div class="shop"><span> 쇼핑몰</span></div>
+						</div>
+					</li>
+					<li class="store_list">
+						<p>서울점</p>
+						<ul>
+							<li><a href="#">잠실점</a></li>
+							<li><a href="#">본점</a></li>
+							<li><a href="#">잠실점</a></li>
+							<li><a href="#">본점</a></li>
+							<li><a href="#">잠실점</a></li>
+							<li><a href="#">본점</a></li>
+							<li><a href="#">잠실점</a></li>
+							<li><a href="#">본점</a></li>
+							<li><a href="#">잠실점</a></li>
+							<li><a href="#">본점</a></li>
+						</ul>
+					</li>
+					<li class="store_list">
+						<p>수도권점</p>
+						<ul>
+							<li><a href="#">잠실점</a></li>
+							<li><a href="#">본점</a></li>
+							<li><a href="#">잠실점</a></li>
+							<li><a href="#">본점</a></li>
+							<li><a href="#">잠실점</a></li>
+							<li><a href="#">본점</a></li>
+							<li><a href="#">잠실점</a></li>
+							<li><a href="#">본점</a></li>
+							<li><a href="#">잠실점</a></li>
+							<li><a href="#">본점</a></li>
+						</ul>
+					</li>
+					<li class="store_list">
+						<p>수도권점</p>
+						<ul>
+							<li><a href="#">잠실점</a></li>
+							<li><a href="#">본점</a></li>
+							<li><a href="#">잠실점</a></li>
+							<li><a href="#">본점</a></li>
+							<li><a href="#">잠실점</a></li>
+							<li><a href="#">본점</a></li>
+							<li><a href="#">잠실점</a></li>
+							<li><a href="#">본점</a></li>
+							<li><a href="#">잠실점</a></li>
+							<li><a href="#">본점</a></li>
+						</ul>
+					</li>
+					<li class="store_list">
+						<p></p>
+						<ul>
+							<li><a href="#">잠실점</a></li>
+							<li><a href="#">본점</a></li>
+							<li><a href="#">잠실점</a></li>
+							<li><a href="#">본점</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="sub_menu cult">
+					<li class="cult_list"><a href="#">롯데갤러리</a></li>
+					<li class="cult_list"><a href="#">롯데문화센터</a></li>
+					<li class="cult_list"><a href="#">롯데웨딩</a></li>
+				</ul>
+				<ul class="sub_menu cust">
+					<li class="cust_list">
+						<p>우수고객 제도</p>
+						<ul>
+							<li><a href="#">2025 선정 기준</a></li>
+							<li><a href="#">2024 혜택 안내</a></li>
+							<li><a href="#">나의 등급 조회</a></li>
+							<li><a href="#">The L.O.V.E 안내</a></li>
+						</ul>
+					</li>
+					<li class="cust_list">
+						<p>고객 문의/안내</p>
+						<ul>
+							<li><a href="#">온라인상담실</a></li>
+							<li><a href="#">상담실안내</a></li>
+							<li><a href="#">분실물안내</a></li>
+							<li><a href="#">반려동물 입장 안내</a></li>
+							<li><a href="#">자주하는질문</a></li>
+							<li><a href="#">가상계좌</a></li>
+							<li><a href="#">공지사항</a></li>
+						</ul>
+					</li>
+					<li class="cust_list">
+						<p>서비스 안내</p>
+						<ul>
+							<li><a href="#">편의서비스</a></li>
+							<li><a href="#">롯데상품권</a></li>
+							<li><a href="#">L.POINT</a></li>
+							<li><a href="#">롯데백화점 APP 소개</a></li>
+							<li><a href="#">스마트픽</a></li>
+						</ul>
+					</li>
+					<li class="cust_list">
+						<p>기타</p>
+						<ul>
+							<li><a href="#">법인/단체구매</a></li>
+							<li><a href="#">명절배송지 등록</a></li>
+							<li><a href="#">배송조회</a></li>
+						</ul>
+					</li>
+				</ul>
+			</header>
+			<section class="main1">
+				<div class="main1_wrap">
+					<div class="title_outer no_scroll">
+						<div class="title_wrap">
+							<ul class="text text2">
+								<li>
+									<span>E</span>
+								</li>
+								<li>
+									<span>n</span>
+								</li>
+								<li>
+									<span>j</span>
+								</li>
+								<li>
+									<span>o</span>
+								</li>
+								<li>
+									<span>y<i>*</i></span>
+								</li>
+							</ul>
+							<ul class="text text2">
+								<li>
+									<span>Y</span>
+								</li>
+								<li>
+									<span>o</span>
+								</li>
+								<li>
+									<span>u</span>
+								</li>
+								<li>
+									<span>r</span>
+								</li>
+							</ul>
+							<ul class="text text2">
+								<li>
+									<span>T</span>
+								</li>
+								<li>
+									<span>i</span>
+								</li>
+								<li>
+									<span>m</span>
+								</li>
+								<li>
+									<span>e</span>
+								</li>
+							</ul>
+							<br />
+							<ul class="at text text2">
+								<li>
+									<span>a</span>
+								</li>
+								<li>
+									<span>t</span>
+								</li>
+							</ul>
+							<ul class="text text2">
+								<li>
+									<span>L</span>
+								</li>
+								<li>
+									<span>O</span>
+								</li>
+								<li>
+									<span>T</span>
+								</li>
+								<li>
+									<span>T</span>
+								</li>
+								<li>
+									<span>E</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="frame no_scroll">
+						<div class="img_wrap">
+							<img src="img/main1.jpg" alt="" />
+						</div>
+						<div class="title_inner">
+							<div class="title_wrap">
+								<ul class="text1 text">
+									<li>
+										<span>E</span>
+									</li>
+									<li>
+										<span>n</span>
+									</li>
+									<li>
+										<span>j</span>
+									</li>
+									<li>
+										<span>o</span>
+									</li>
+									<li>
+										<span>y<i>*</i></span>
+									</li>
+								</ul>
+								<ul class="text1 text">
+									<li>
+										<span>Y</span>
+									</li>
+									<li>
+										<span>o</span>
+									</li>
+									<li>
+										<span>u</span>
+									</li>
+									<li>
+										<span>r</span>
+									</li>
+								</ul>
+								<ul class="text1 text">
+									<li>
+										<span>T</span>
+									</li>
+									<li>
+										<span>i</span>
+									</li>
+									<li>
+										<span>m</span>
+									</li>
+									<li>
+										<span>e</span>
+									</li>
+								</ul>
+								<br />
+								<ul class="at text1 text">
+									<li>
+										<span>a</span>
+									</li>
+									<li>
+										<span>t</span>
+									</li>
+								</ul>
+								<ul class="text1 text">
+									<li>
+										<span>L</span>
+									</li>
+									<li>
+										<span>O</span>
+									</li>
+									<li>
+										<span>T</span>
+									</li>
+									<li>
+										<span>T</span>
+									</li>
+									<li>
+										<span>E</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<main id="horizontal" class="main2">
+				<div class="slider1" data-aos="fade-left" data-aos-duration="300" data-aos-delay="100">
+					<div class="swiper-wrapper">
+						<section class="swiper-slide parallax__item">
+							<div data-aos="fade-left" data-aos-duration="400" data-aos-delay="300" data-aos-easing="linear">
+								<div class="title">
+									<div class="num">01</div>
+									<div class="text">#Shopping News</div>
+								</div>
+								<div class="img" data-aos="fade-left">
+									<img src="img/main2_slider1.jpeg" alt="" />
+								</div>
+							</div>
+						</section>
+						<section class="swiper-slide parallax__item">
+							<div data-aos="fade-left" data-aos-duration="400" data-aos-delay="500" data-aos-easing="linear">
+								<div class="title">
+									<div class="num">02</div>
+									<div class="text">#Shopping News</div>
+								</div>
+								<div class="img"><img src="img/main2_slider2.jpg" alt="" /></div>
+							</div>
+						</section>
+						<section class="swiper-slide parallax__item">
+							<div data-aos="fade-left" data-aos-duration="400" data-aos-delay="600" data-aos-easing="linear">
+								<div class="title">
+									<div class="num">03</div>
+									<div class="text">#Culture&Event</div>
+								</div>
+								<div class="img imge"><img src="img/main2_slider3.jpg" alt="" /></div>
+							</div>
+						</section>
+						<section class="swiper-slide parallax__item">
+							<div data-aos="fade-left" data-aos-duration="400" data-aos-delay="700" data-aos-easing="linear">
+								<div class="title">
+									<div class="num">04</div>
+									<div class="text">#Shopping News</div>
+								</div>
+								<div class="img"><img src="img/main2_slider4.jpg" alt="" /></div>
+							</div>
+						</section>
+						<section class="swiper-slide parallax__item">
+							<div data-aos="fade-left" data-aos-duration="400" data-aos-delay="700" data-aos-easing="linear">
+								<div class="title">
+									<div class="num">05</div>
+									<div class="text">#Culture&Event</div>
+								</div>
+								<div class="img"><img src="img/main2_slider5.jpeg" alt="" /></div>
+							</div>
+						</section>
+						<section class="swiper-slide parallax__item">
+							<div data-aos="fade-left" data-aos-duration="400" data-aos-delay="700" data-aos-easing="linear">
+								<div class="title">
+									<div class="num">06</div>
+									<div class="text">#Culture&Event</div>
+								</div>
+								<div class="img imge"><img src="img/main2_slider6.jpeg" alt="" /></div>
+							</div>
+						</section>
+						<section class="swiper-slide parallax__item">
+							<div class="title">
+								<div class="num">07</div>
+								<div class="text">#Culture&Event</div>
+							</div>
+							<div class="img"><img src="img/main2_slider7.jpeg" alt="" /></div>
+						</section>
+						<section class="swiper-slide parallax__item imgrbox">
+							<div class="img imgr">
+								<img src="img/more-arrow.svg" alt="" class="arr" />
+								<img src="img/main2_slider_rotate.svg" alt="" class="rot" />
+							</div>
+						</section>
+					</div>
+				</div>
+				<div class="headline">
+					<div class="headline_wrap">
+						<div>
+							<p data-aos="fade-right" data-aos-duration="350" data-aos-delay="100">W</p>
+						</div>
+						<div><p data-aos="fade-right" data-aos-duration="350" data-aos-delay="150">h</p></div>
+						<div><p data-aos="fade-right" data-aos-duration="350" data-aos-delay="200">a</p></div>
+						<div><p data-aos="fade-right" data-aos-duration="350" data-aos-delay="250">t</p></div>
+						<div><p data-aos="fade-right" data-aos-duration="350" data-aos-delay="300">`</p></div>
+						<div>
+							<p data-aos="fade-right" data-aos-duration="350" data-aos-delay="350">s&nbsp;</p>
+						</div>
+						<div class="italic"><p data-aos="fade-right" data-aos-duration="350" data-aos-delay="450">o</p></div>
+						<div class="italic"><p data-aos="fade-right" data-aos-duration="350" data-aos-delay="500">n</p></div>
+						<div class="italic"><p data-aos="fade-right" data-aos-duration="350" data-aos-delay="550">?</p></div>
+					</div>
+				</div>
+			</main>
+			<div class="box"></div>
+		</div>
+	</body>
+	<script>
+		// 헤더
+		$(window).on('load', function () {
+			$('.store_list .dep').addClass('active');
+			$('.store_list .dep').mouseover(function () {
+				$('.store_list .dep').addClass('active');
+				$('.store_list .out').removeClass('active');
+				$('.store_list .shop').removeClass('active');
+			});
+			$('.store_list .out').mouseover(function () {
+				$('.store_list .out').addClass('active');
+				$('.store_list .dep').removeClass('active');
+				$('.store_list .shop').removeClass('active');
+			});
+			$('.store_list .shop').mouseover(function () {
+				$('.store_list .shop').addClass('active');
+				$('.store_list .out').removeClass('active');
+				$('.store_list .dep').removeClass('active');
+			});
+		});
+
+		$('.hd2 .menu li').each(function () {
+			$('.hd2 .menu li').mouseover(function () {
+				$(this).addClass('view');
+				$('.store_list .dep').addClass('active');
+				$('.store_list .out').removeClass('active');
+				$('.store_list .shop').removeClass('active');
+			});
+		});
+		$('.hd2 .menu li').each(function () {
+			$('.hd2 .menu li').mouseout(function () {
+				$(this).removeClass('view');
+			});
+		});
+		$('.menu1').mouseover(function () {
+			$('.sub_menu.store').addClass('view');
+		});
+		$('.menu1').mouseout(function () {
+			$('.sub_menu.store').removeClass('view');
+		});
+		$('.menu2').mouseover(function () {
+			$('.sub_menu.cult').addClass('view');
+		});
+		$('.menu2').mouseout(function () {
+			$('.sub_menu.cult').removeClass('view');
+		});
+		$('.menu3').mouseover(function () {
+			$('.sub_menu.cust').addClass('view');
+		});
+		$('.menu3').mouseout(function () {
+			$('.sub_menu.cust').removeClass('view');
+		});
+
+		$('.place').on('click', function () {
+			if ($('.popup').hasClass('view')) {
+				$('.popup').removeClass('view');
+			} else {
+				$('.popup').addClass('view');
+			}
+		});
+		$('.main1').on('click', function () {
+			$('.popup').removeClass('view');
+		});
+		// main1 텍스트 애니메이션
+		$(document).ready(function () {
+			$('.text1 li').each(function (index) {
+				var animationDelay = 2.5;
+				$(this).css('animation-delay', animationDelay + index * 0.1 + 's');
+			});
+			$('.text2 li').each(function (index) {
+				var animationDelay = 2.5;
+				$(this).css('animation-delay', animationDelay + index * 0.1 + 's');
+			});
+		});
+		// main1 텍스트 gsap
+		gsap.to('.title_wrap', {
+			yPercent: -100,
+			ease: 'none',
+			duration: 0.5,
+			scrollTrigger: {
+				trigger: '.title_wrap',
+				start: 'top bottom',
+				end: 'bottom top',
+				scrub: true,
+			},
+		});
+		// main2 슬라이드 gsap
+		const section = gsap.utils.toArray('.swiper-wrapper section');
+		const wrapper = gsap.utils.toArray('.swiper-wrapper');
+		gsap.to(section, {
+			xPercent: -100 * (section.length - 4.12),
+			ease: 'none',
+			scrollTrigger: {
+				trigger: '#horizontal',
+				start: 'top top',
+				end: '100%', //숫자가 클수록 느려진다.
+				pin: true,
+				scrub: 1,
+				// invalidateOnRefresh: true,
+				// anticipatePin: 1,
+			},
+		});
+		AOS.init();
+		// var swiper = new Swiper('.slider1', {
+		// 	loop: false,
+		// 	centeredSlides: true,
+		// 	freeMode: true,
+		// 	resistance: true,
+		// 	navigation: {
+		// 		nextEl: '.swiper-button-next',
+		// 		prevEl: '.swiper-button-prev',
+		// 	},
+		// });
+
+		// 스크롤 스무스
+		class Scrooth {
+			constructor({ element = window, strength = 5, acceleration = 1.0, deceleration = 0.975 } = {}) {
+				this.element = element;
+				this.distance = strength;
+				this.acceleration = acceleration;
+				this.deceleration = deceleration;
+				this.running = false;
+
+				this.element.addEventListener('wheel', this.scrollHandler.bind(this), { passive: false });
+				this.element.addEventListener('mousewheel', this.scrollHandler.bind(this), { passive: false });
+				this.scroll = this.scroll.bind(this);
+			}
+			scrollHandler(e) {
+				e.preventDefault();
+				if (!this.running) {
+					this.top = this.element.pageYOffset || this.element.scrollTop || 0;
+					this.running = true;
+					this.currentDistance = e.deltaY > 0 ? 0.1 : -0.1;
+					this.isDistanceAsc = true;
+					this.scroll();
+				} else {
+					this.isDistanceAsc = false;
+					this.currentDistance = e.deltaY > 0 ? this.distance : -this.distance;
+				}
+			}
+			scroll() {
+				if (this.running) {
+					this.currentDistance *= this.isDistanceAsc === true ? this.acceleration : this.deceleration;
+					Math.abs(this.currentDistance) < 0.1 && this.isDistanceAsc === false ? (this.running = false) : 1;
+					Math.abs(this.currentDistance) >= Math.abs(this.distance) ? (this.isDistanceAsc = false) : 1;
+
+					this.top += this.currentDistance;
+					this.element.scrollTo(0, this.top);
+
+					requestAnimationFrame(this.scroll);
+				}
+			}
+		}
+
+		const scroll = new Scrooth({
+			element: window,
+			strength: 27, //스크롤 한번에 이동하는 거리
+			// acceleration: 1.4,
+			deceleration: 0.905,
+		});
+	</script>
+</html>
